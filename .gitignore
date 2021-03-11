@@ -1,0 +1,6 @@
+# Don't add compiled css
+sass/index.css
+sass/index.css.map
+
+# Ignore node modules
+node_modules

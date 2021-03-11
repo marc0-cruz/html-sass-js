@@ -1,0 +1,11 @@
+@import "utils";
+
+@mixin fontSize($size: 16px) {
+  font-size: $size; //Fallback in px
+  font-size: toRem($size);
+}
+
+@mixin lineHeight($size: 16px) {
+  line-height: normal;
+  line-height: toRem($size);
+}

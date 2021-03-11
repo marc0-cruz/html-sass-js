@@ -1,0 +1,13 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+/**
+  * AWWG CSS
+  */
+@import "constants/colors";
+@import "mixins/font";
+
+/** COMPONENTS **/
+@import "components/index";
+
+/** GLOBAL **/
+@import "global";
