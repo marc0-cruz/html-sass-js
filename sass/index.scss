@@ -3,9 +3,9 @@
 /**
   * AWWG CSS
   */
-
-@import "constants/colors";
-@import "mixins/font";
+@import "utils/index";
+@import "constants/index";
+@import "mixins/index";
 
 /** COMPONENTS **/
 @import "components/index";

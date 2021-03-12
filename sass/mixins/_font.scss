@@ -1,8 +1,3 @@
-@function toRem($size: 16px) {
-  $remSize: $size / 16px;
-  @return #{$remSize}rem;
-}
-
 @mixin fontSize($size: 16px) {
   font-size: $size; //Fallback in px
   font-size: toRem($size);
