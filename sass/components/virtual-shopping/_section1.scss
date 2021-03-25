@@ -1,0 +1,45 @@
+.virtual-shopping {
+  .section1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 342px;
+
+    @include media-breakpoint-up(md) {
+      height: 715px;
+    }
+
+    &__image {
+      background-size: cover;
+      background-position: top;
+      height: 100%;
+      width: 100%;
+
+      &:nth-of-type(1) {
+        background-image: url("/virtual-shopping/assets/images/chaqueta\ 1.jpg");
+      }
+
+      &:nth-of-type(2) {
+        background-image: url("/virtual-shopping/assets/images/CHAQUETA_01.jpg");
+      }
+    }
+
+    &__virtual-shopping {
+      background-color: $white;
+      max-width: 220px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      position: absolute;
+      text-align: center;
+
+      @include media-breakpoint-up(md) {
+        max-width: none;
+        padding: 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.virtual-shopping {
+  .section2 {
+    background-color: $dark;
+    color: $white;
+    padding: 32px;
+
+    @include media-breakpoint-up(md) {
+      padding: 64px 142px;
+    }
+
+    img {
+      margin-right: 8px;
+    }
+
+    p {
+      margin-top: 16px;
+
+      @include media-breakpoint-up(md) {
+        margin-top: 0px;
+      }
+    }
+
+    &__whatsapp-info {
+      display: flex;
+      flex-direction: row;
+
+      &:nth-of-type(even) {
+        margin-top: 8px;
+      }
+    }
+  }
+}

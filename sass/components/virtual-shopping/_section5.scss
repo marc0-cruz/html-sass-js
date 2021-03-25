@@ -1,0 +1,23 @@
+.virtual-shopping {
+  .section5 {
+    position: relative;
+    display: flex;
+    height: 698px;
+
+    &__image {
+      background-size: cover;
+      background-position: center 30%;
+      height: 100%;
+      width: 100%;
+      background-image: url("/virtual-shopping/assets/images/CHAQUETA_01\ b.jpg");
+    }
+
+    &__questions {
+      width: 100%;
+      padding: 32px;
+      color: $white;
+      background-color: $dark;
+      text-align: center;
+    }
+  }
+}
