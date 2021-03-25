@@ -1,9 +1,16 @@
 @mixin fontSize($size: 16px) {
-  font-size: $size; //Fallback in px
-  font-size: toRem($size);
+  font-size: $size !important;
+  font-size: #{$size / 16px}rem !important;
 }
 
 @mixin lineHeight($size: 16px) {
-  line-height: normal;
-  line-height: toRem($size);
+  line-height: normal !important;
+  line-height: #{$size / 16px}rem !important;
+}
+
+@mixin title {
+  font-family: "Courier New", Courier, monospace !important;
+  font-weight: 400 !important;
+  @include fontSize(30px);
+  @include lineHeight(36px);
 }
