@@ -1,0 +1,61 @@
+.virtual-shopping {
+  .section3 {
+    box-sizing: content-box;
+
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 80px 80px;
+    }
+
+    &__image {
+      background-size: cover;
+      background-position: center top;
+      height: 360px;
+      width: 100%;
+      background-image: url("/virtual-shopping/assets/images/chaqueta\ 3b.jpg");
+
+      @include media-breakpoint-up(lg) {
+        height: 628px;
+        min-width: 567px;
+        margin-right: 80px;
+      }
+    }
+
+    &__info {
+      padding: 32px 16px;
+
+      @include media-breakpoint-up(lg) {
+        padding: 0;
+      }
+
+      h1,
+      p {
+        margin-bottom: 16px;
+
+        @include media-breakpoint-up(md) {
+          margin-bottom: 32px;
+        }
+      }
+
+      div {
+        h1,
+        p {
+          margin: 0;
+        }
+
+        h1 {
+          margin-bottom: 8px;
+
+          @include media-breakpoint-up(md) {
+            margin-bottom: 16px;
+          }
+        }
+
+        background-color: $lightGrey;
+        padding: 24px 16px;
+      }
+    }
+  }
+}

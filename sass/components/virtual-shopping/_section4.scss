@@ -1,0 +1,55 @@
+.virtual-shopping {
+  .section4 {
+    background-color: $blue;
+    color: $white;
+    padding: 32px 16px;
+
+    @include media-breakpoint-up(lg) {
+      text-align: center;
+    }
+
+    h1 {
+      @include bigTitle;
+      padding: 0 8px;
+      width: 100%;
+      align-self: center;
+
+      @include media-breakpoint-up(lg) {
+        width: 50%;
+        text-align: center;
+      }
+    }
+
+    h1,
+    img {
+      margin-bottom: 24px;
+
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 40px;
+      }
+    }
+
+    div {
+      max-width: 852px;
+    }
+
+    &__info {
+      padding: 8px;
+
+      @include media-breakpoint-up(lg) {
+        padding: 0 12px;
+      }
+    }
+
+    &__note {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: $black;
+      background-color: $white;
+      padding: 16px;
+    }
+  }
+}

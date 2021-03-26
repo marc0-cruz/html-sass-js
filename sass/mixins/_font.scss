@@ -8,6 +8,13 @@
   line-height: #{$size / 16px}rem !important;
 }
 
+@mixin bigTitle {
+  font-family: Apercu, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400 !important;
+  @include fontSize(24px);
+  @include lineHeight(28.8px);
+}
+
 @mixin title {
   font-family: Apercu, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700 !important;
