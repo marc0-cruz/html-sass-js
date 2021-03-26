@@ -8,8 +8,8 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "liveSassCompile.settings.formats": [
     {
-      "format": "compressed",
-      "extensionName": ".min.css",
+      "format": "expanded",
+      "extensionName": ".css",
       "savePath": "/virtual-shopping"
     }
   ]

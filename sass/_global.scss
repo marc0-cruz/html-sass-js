@@ -10,23 +10,3 @@ body {
 /* BOOTSTRAP OVERRIDE */
 
 /* GENERAL CLASSES */
-.button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 290px;
-  width: 100%;
-  padding: 16px;
-  border: 2px solid $white;
-  text-align: center;
-  vertical-align: middle;
-
-  img {
-    margin-right: 16px;
-  }
-
-  p {
-    text-overflow: ellipsis;
-    overflow: hidden;
-  }
-}
