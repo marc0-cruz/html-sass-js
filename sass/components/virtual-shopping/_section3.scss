@@ -1,12 +1,16 @@
 .virtual-shopping {
   .section3 {
-    box-sizing: content-box;
+    container {
+      width: 100%;
+      max-width: 1440px;
+      box-sizing: content-box;
 
-    @include media-breakpoint-up(lg) {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      padding: 80px 80px;
+      @include media-breakpoint-up(lg) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 80px 80px;
+      }
     }
 
     &__image {
@@ -14,6 +18,10 @@
       background-position: center top;
       height: 360px;
       width: 100%;
+
+      @include media-breakpoint-up(md) {
+        height: 628px;
+      }
 
       @include media-breakpoint-up(lg) {
         height: 628px;

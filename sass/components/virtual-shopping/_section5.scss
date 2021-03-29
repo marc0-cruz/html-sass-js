@@ -2,13 +2,20 @@
   .section5 {
     position: relative;
     display: flex;
-    height: 698px;
 
     &__image {
       background-size: cover;
       background-position: center 30%;
-      height: 100%;
+      height: 349px;
       width: 100%;
+
+      @include media-breakpoint-up(md) {
+        height: 524px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        height: 698px;
+      }
     }
 
     &__questions {
