@@ -2,12 +2,52 @@
 
 <html>
   <head>
-    <link rel="stylesheet" href="./example/index.min.css" />
+    <link rel="stylesheet" href="./styles.min.css" />
+    <link rel="stylesheet" href="./index.min.css" />
 
     <title>HTML5 Playground</title>
   </head>
 
   <body>
+    <h1>CAROUSEL COMPONENT</h1>
+
+    <div class="custom-swiper-tile">
+      <div
+        class="custom-swiper-tile__image"
+        style="
+          background-image: url(images/clp/clp-categories-tab-1-1@2x.jpg?$staticlink$);
+        "
+      ></div>
+      <a
+        href="#"
+        class="custom-swiper-tile__overlay d-flex flex-column align-items-center justify-content-center"
+      >
+        <h2 class="">Blazer Jackets</h2>
+        <a href="#" class="custom-swiper-tile__overlay__link stretched-link">
+          Go to product
+        </a>
+      </a>
+    </div>
+
+    <h1>IMAGE WITH DESCRIPTION COMPONENT</h1>
+    <div
+      class="image-with-description d-flex flex-column flex-md-row align-items-center justify-content-center"
+    >
+      <div
+        class="image-with-description__image col-6"
+        style="background-image: url(https://picsum.photos/1980/1024)"
+      ></div>
+      <div class="col-1"></div>
+      <div class="col-3 d-flex flex-column justify-content-center">
+        <h3 class="mb-4">Aston Martin</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus
+          libero pellentesque.
+        </p>
+        <div class="o-btn-primary mt-5">Shop boys</div>
+      </div>
+    </div>
+
     <!-- JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </body>
