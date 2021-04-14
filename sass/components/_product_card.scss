@@ -1,6 +1,22 @@
-.custom-swiper-tile {
+.product-card {
+  display: flex;
+  flex: 1;
   position: relative;
-  height: 598px;
+  height: 360px;
+  min-width: 256px;
+
+  @include media-breakpoint-up(md) {
+    height: 598px;
+    min-width: 448px;
+  }
+
+  &:nth-child(even) {
+    margin: 0 16px;
+
+    @include media-breakpoint-up(md) {
+      margin: 0 24px;
+    }
+  }
 
   &__overlay {
     position: absolute;

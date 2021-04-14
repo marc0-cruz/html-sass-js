@@ -9,44 +9,127 @@
   </head>
 
   <body>
-    <h1>CAROUSEL COMPONENT</h1>
-
-    <div class="custom-swiper-tile">
-      <div
-        class="custom-swiper-tile__image"
-        style="
-          background-image: url(images/clp/clp-categories-tab-1-1@2x.jpg?$staticlink$);
-        "
-      ></div>
-      <a
-        href="#"
-        class="custom-swiper-tile__overlay d-flex flex-column align-items-center justify-content-center"
-      >
-        <h2 class="">Blazer Jackets</h2>
-        <a href="#" class="custom-swiper-tile__overlay__link stretched-link">
-          Go to product
+    <!-- PRODUCT SWIPER -->
+    <div class="d-flex flex-row overflow-auto">
+      <div class="product-card">
+        <div
+          class="product-card__image"
+          style="background-image: url(https://picsum.photos/1980/1024)"
+        ></div>
+        <a
+          href="#"
+          class="product-card__overlay d-flex flex-column align-items-center justify-content-center"
+        >
+          <h2 class="">Blazer Jackets</h2>
+          <a href="#" class="product-card__overlay__link">Go to product</a>
         </a>
-      </a>
+      </div>
+
+      <div class="product-card">
+        <div
+          class="product-card__image"
+          style="background-image: url(https://picsum.photos/1980/1024)"
+        ></div>
+        <a
+          href="#"
+          class="product-card__overlay d-flex flex-column align-items-center justify-content-center"
+        >
+          <h2 class="">Blazer Jackets</h2>
+          <a href="#" class="product-card__overlay__link">Go to product</a>
+        </a>
+      </div>
+
+      <div class="product-card">
+        <div
+          class="product-card__image"
+          style="background-image: url(https://picsum.photos/1980/1024)"
+        ></div>
+        <a
+          href="#"
+          class="product-card__overlay d-flex flex-column align-items-center justify-content-center"
+        >
+          <h2 class="">Blazer Jackets</h2>
+          <a href="#" class="product-card__overlay__link">Go to product</a>
+        </a>
+      </div>
     </div>
 
-    <h1>IMAGE WITH DESCRIPTION COMPONENT</h1>
+    <div class="mb-10"></div>
+
+    <!-- IMAGE WITH DESCRIPTION COMPONENT -->
     <div
       class="image-with-description d-flex flex-column flex-md-row align-items-center justify-content-center"
     >
+      <!-- TITLE: MOBILE ONLY -->
       <div
-        class="image-with-description__image col-6"
+        class="col-12 d-flex align-items-center justify-content-center d-md-none mb-3"
+      >
+        <h3>Aston Martin</h3>
+      </div>
+
+      <!-- SUBTITLE: MOBILE ONLY -->
+      <div
+        class="col-12 d-flex align-items-center justify-content-center d-md-none mb-3"
+      >
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus
+          libero pellentesque.
+        </p>
+      </div>
+
+      <!-- IMAGE BECOMES A COLUMN: TABLET AND UP -->
+      <div
+        class="image-with-description__image col-md-6"
         style="background-image: url(https://picsum.photos/1980/1024)"
       ></div>
-      <div class="col-1"></div>
-      <div class="col-3 d-flex flex-column justify-content-center">
+
+      <!-- SPACING BETWEEN IMAGE AND DESCRIPTION: TABLET AND UP -->
+      <div class="col-1 d-none d-md-block"></div>
+
+      <!-- COLUMN WITH EVERYTHING: TABLET AND UP -->
+      <div class="col-3 d-none d-md-block">
         <h3 class="mb-4">Aston Martin</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus
           libero pellentesque.
         </p>
-        <div class="o-btn-primary mt-5">Shop boys</div>
+        <div class="o-btn-primary mt-5 text-center">Shop boys</div>
+      </div>
+
+      <!-- BUTTON: MOBILE ONLY -->
+      <div
+        class="col-12 d-flex align-items-center justify-content-center d-md-none mt-4"
+      >
+        <div class="o-btn-primary text-center">Shop boys</div>
       </div>
     </div>
+
+    <div class="mb-10"></div>
+
+    <!-- IMAGE WITH CONTENT CENTERED -->
+    <div
+      class="image-with-content-centered row flex-column align-items-center justify-content-center"
+    >
+      <div
+        class="image-with-content-centered__image col-10"
+        style="background-image: url(https://picsum.photos/1980/1024)"
+      >
+        <div class="image-with-content-centered__overlay">
+          <h3 class="mb-4">Premium services</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            cursus libero pellentesque eros imperdiet porttitor. Maecenas in
+            tortor libero. Nullam et dapibus augue. Ut fermentum at ligula non
+            fermentum.
+          </p>
+          <div class="image-with-content-centered__button mt-5">
+            <div class="o-btn-secondary text-center">PRIMARY BUTTON</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-10">&nbsp;</div>
 
     <!-- JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
