@@ -3,15 +3,40 @@
 <html>
   <head>
     <link rel="stylesheet" href="./styles.min.css" />
-    <link rel="stylesheet" href="./index.min.css" />
+    <link rel="stylesheet" href="./components.min.css" />
 
     <title>HTML5 Playground</title>
   </head>
 
   <body>
+    <!-- IMAGE WITH CONTENT CENTERED -->
+    <div
+      class="image-with-content-centered row justify-content-center no-gutters"
+    >
+      <div
+        class="image-with-content-centered__image col col-md-10"
+        style="background-image: url(https://picsum.photos/1980/1024)"
+      >
+        <div
+          class="image-with-content-centered__overlay d-flex flex-column align-items-center justify-content-center"
+        >
+          <h3 class="mb-4">Premium services</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            cursus libero pellentesque eros imperdiet porttitor.
+          </p>
+          <div class="image-with-content-centered__button mt-5">
+            <div class="o-btn-secondary text-center">PRIMARY BUTTON</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-10"></div>
+
     <!-- PRODUCT SWIPER -->
-    <div class="d-flex flex-row overflow-auto">
-      <div class="product-card">
+    <div class="product-card d-flex flex-row overflow-auto">
+      <div class="product-card__container">
         <div
           class="product-card__image"
           style="background-image: url(https://picsum.photos/1980/1024)"
@@ -20,12 +45,12 @@
           href="#"
           class="product-card__overlay d-flex flex-column align-items-center justify-content-center"
         >
-          <h2 class="">Blazer Jackets</h2>
+          <h2 class="">Blazer Jackets 1</h2>
           <a href="#" class="product-card__overlay__link">Go to product</a>
         </a>
       </div>
 
-      <div class="product-card">
+      <div class="product-card__container">
         <div
           class="product-card__image"
           style="background-image: url(https://picsum.photos/1980/1024)"
@@ -34,12 +59,12 @@
           href="#"
           class="product-card__overlay d-flex flex-column align-items-center justify-content-center"
         >
-          <h2 class="">Blazer Jackets</h2>
+          <h2 class="">Blazer Jackets 1</h2>
           <a href="#" class="product-card__overlay__link">Go to product</a>
         </a>
       </div>
 
-      <div class="product-card">
+      <div class="product-card__container">
         <div
           class="product-card__image"
           style="background-image: url(https://picsum.photos/1980/1024)"
@@ -48,7 +73,7 @@
           href="#"
           class="product-card__overlay d-flex flex-column align-items-center justify-content-center"
         >
-          <h2 class="">Blazer Jackets</h2>
+          <h2 class="">Blazer Jackets 1</h2>
           <a href="#" class="product-card__overlay__link">Go to product</a>
         </a>
       </div>
@@ -101,31 +126,6 @@
         class="col-12 d-flex align-items-center justify-content-center d-md-none mt-4"
       >
         <div class="o-btn-primary text-center">Shop boys</div>
-      </div>
-    </div>
-
-    <div class="mb-10"></div>
-
-    <!-- IMAGE WITH CONTENT CENTERED -->
-    <div
-      class="image-with-content-centered row flex-column align-items-center justify-content-center"
-    >
-      <div
-        class="image-with-content-centered__image col-10"
-        style="background-image: url(https://picsum.photos/1980/1024)"
-      >
-        <div class="image-with-content-centered__overlay">
-          <h3 class="mb-4">Premium services</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-            cursus libero pellentesque eros imperdiet porttitor. Maecenas in
-            tortor libero. Nullam et dapibus augue. Ut fermentum at ligula non
-            fermentum.
-          </p>
-          <div class="image-with-content-centered__button mt-5">
-            <div class="o-btn-secondary text-center">PRIMARY BUTTON</div>
-          </div>
-        </div>
       </div>
     </div>
 
