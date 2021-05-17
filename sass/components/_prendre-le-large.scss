@@ -51,12 +51,8 @@
   }
 
   &__side-image {
-    height: auto;
+    height: 100%;
     width: 100%;
-
-    @include media-breakpoint-up(lg) {
-      width: 50%;
-    }
   }
 
   &__thumbnail {
