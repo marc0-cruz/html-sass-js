@@ -1,0 +1,66 @@
+.prendre-le-large {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  h1 {
+    color: #1f2134;
+    margin: 0;
+
+    @include title;
+  }
+
+  p {
+    text-align: center;
+    color: #222222;
+
+    @include text;
+    @include media-breakpoint-up(lg) {
+      width: 75%;
+    }
+  }
+
+  &__button {
+    color: #142142;
+    border: 1px solid #142142;
+    background-color: white;
+
+    svg {
+      margin-left: 16px;
+    }
+
+    &:hover {
+      path {
+        fill: white;
+      }
+    }
+  }
+
+  &__banner {
+    height: 160px;
+
+    @include media-breakpoint-up(lg) {
+      height: 220px;
+    }
+  }
+
+  &__large-image {
+    height: auto;
+    width: 100%;
+  }
+
+  &__side-image {
+    height: auto;
+    width: 100%;
+
+    @include media-breakpoint-up(lg) {
+      width: 50%;
+    }
+  }
+
+  &__thumbnail {
+    height: auto;
+    width: 50%;
+  }
+}

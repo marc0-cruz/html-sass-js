@@ -10,7 +10,7 @@
     {
       "format": "compressed",
       "extensionName": ".min.css",
-      "savePath": "/example"
+      "savePath": "/landings/2105-prendre-le-large"
     }
   ],
   "liveSassCompile.settings.generateMap": false
