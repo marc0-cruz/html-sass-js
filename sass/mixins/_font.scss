@@ -1,16 +1,52 @@
 @mixin fontSize($size: 16px) {
-  font-size: $size !important;
-  font-size: #{$size / 16px}rem !important;
+  font-size: $size;
+  font-size: #{$size / 16px}rem;
 }
 
 @mixin lineHeight($size: 16px) {
-  line-height: normal !important;
-  line-height: #{$size / 16px}rem !important;
+  line-height: normal;
+  line-height: #{$size / 16px}rem;
 }
 
 @mixin title {
-  font-family: "Courier New", Courier, monospace !important;
-  font-weight: 400 !important;
-  @include fontSize(30px);
-  @include lineHeight(36px);
+  font-family: "Founders Grotesk";
+  font-weight: 600;
+  @include fontSize(24px);
+  @include lineHeight(29px);
+  @include media-breakpoint-up(lg) {
+    @include fontSize(48px);
+    @include lineHeight(51px);
+  }
+}
+
+@mixin subtitle {
+  font-family: "Founders Grotesk";
+  font-weight: 400;
+  @include fontSize(15px);
+  @include lineHeight(15px);
+  @include media-breakpoint-up(lg) {
+    @include fontSize(24px);
+    @include lineHeight(40px);
+  }
+}
+
+@mixin subtitle2 {
+  font-family: "Founders Grotesk";
+  font-weight: 400;
+  @include fontSize(px);
+  @include lineHeight(22px);
+  @include media-breakpoint-up(lg) {
+    @include fontSize(36px);
+    @include lineHeight(40px);
+  }
+}
+
+@mixin text {
+  font-weight: 400;
+  @include fontSize(15px);
+  @include lineHeight(18px);
+  @include media-breakpoint-up(lg) {
+    @include fontSize(24px);
+    @include lineHeight(31px);
+  }
 }
