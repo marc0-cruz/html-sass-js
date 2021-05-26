@@ -1,0 +1,40 @@
+.jeans-bottom-module {
+  background-color: #204566;
+  max-width: 1342px;
+
+  h1 {
+    color: white;
+    @include title;
+
+    @include media-breakpoint-up(xl) {
+      color: black;
+    }
+  }
+
+  p {
+    width: 85%;
+    color: white;
+    @include text;
+
+    @include media-breakpoint-up(xl) {
+      color: black;
+    }
+  }
+
+  &__description {
+    @include media-breakpoint-up(xl) {
+      position: absolute;
+      bottom: 0;
+      margin: 0 auto;
+      background-color: white;
+      max-height: 178px;
+      max-width: 326px;
+      padding: 16px;
+    }
+  }
+
+  &__image {
+    height: auto;
+    width: 100%;
+  }
+}
